@@ -3,6 +3,13 @@ oXygen CustomButton Plugin
 
 This is a demo plugin for the oXygen XML editor.
 
+Step 1
+---
+* creating a Workspace Access Plugin with a custom toolbar and a button
+* details: http://tobias-bloggt.de/2014/01/24/custom-toolbar-and-button-for-oxygen-xml-editor/
+
+*Check out the other branches for further tutorial steps...*
+
 
 Build
 ---
