@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plugin SYSTEM "../plugin.dtd">
+<plugin
+	id="de.mediaversal.oxygen.CustomButton"
+	name="Custom Button for oXygen"
+	description="Adds a custom toolbar and a button"
+	version="1.0.0"
+	vendor="mediaversal"
+	class="de.mediaversal.oxygen.CustomButton.CustomButtonPlugin"
+	classLoaderType="preferReferencedResources">
+	<runtime>
+		<library name="lib/CustomButton.jar"/>
+	</runtime>
+	<extension type="WorkspaceAccess" class="de.mediaversal.oxygen.CustomButton.CustomButtonPluginExtension"/>
+	
+	<!--The sample toolbar which will present messages from the sample plugin.-->
+	<toolbar id="CustomToolbar" initialSide="NORTH" initialRow="1"/>
+</plugin>
