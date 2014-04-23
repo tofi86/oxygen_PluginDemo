@@ -8,6 +8,12 @@ Step 1
 * creating a Workspace Access Plugin with a custom toolbar and a button
 * details: http://tobias-bloggt.de/2014/01/24/custom-toolbar-and-button-for-oxygen-xml-editor/
 
+
+Step 2
+---
+* enable button only when working with XML files and disable when not
+* details: http://tobias-bloggt.de/2014/04/23/tutorial-2-oxygen-plugin-development/
+
 *Check out the other branches for further tutorial steps...*
 
 
