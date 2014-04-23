@@ -18,12 +18,12 @@ public class CustomButtonPluginExtension implements WorkspaceAccessPluginExtensi
 	@Override
 	public void applicationStarted(final StandalonePluginWorkspace pluginWorkspaceAccess) {
 
-		// add new toolbar
+		// step 1: add new toolbar
 		pluginWorkspaceAccess.addToolbarComponentsCustomizer(new ToolbarComponentsCustomizer() {
 			@Override
 			public void customizeToolbar(final ToolbarInfo toolbarInfo) {
 
-				// if toolbar is our custom toolbar (referenced by ID in plugin.xml)
+				// step 1: if toolbar is our custom toolbar (referenced by ID in plugin.xml)
 				if (toolbarInfo.getToolbarID().equals("CustomToolbar")) {
 
 					JButton demoButton = new JButton("Demo Button");
@@ -38,12 +38,12 @@ public class CustomButtonPluginExtension implements WorkspaceAccessPluginExtensi
 						}
 					});
 
-					// Add demoButton to toolbar
+					// step 1: Add demoButton to toolbar
 					List<JComponent> comps = new ArrayList<JComponent>();
 					comps.add(demoButton);
 					toolbarInfo.setComponents(comps.toArray(new JComponent[0]));
 
-					// Set toolbar title
+					// step 1: Set toolbar title
 					toolbarInfo.setTitle("Custom Demo Toolbar");
 				}
 			}
